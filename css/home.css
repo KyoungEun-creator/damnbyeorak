@@ -1,0 +1,85 @@
+body {
+    font-family: 'East Sea Dokdo', cursive;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#homeTitle {
+    position: absolute;
+    width: 375px;
+    height: 154px;
+    left: calc(50% - 375px/2 - 1.5px);
+    top: 88px;
+    font-family: 'East Sea Dokdo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 37px;
+    text-align: center;
+    color: #000000;
+}
+
+.hidden {
+    display: none;
+}
+
+.btn  {
+    font-size: 40px;
+    font-family: 'East Sea Dokdo', cursive;    
+    width: 230px;
+    height: 71.17px;
+    background: #5C4545;
+    border: none;
+    color: white;
+    border-radius: 21px; 
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0,4,4,0), 0 6px 6px rgba(0,0,0,0.23);
+    justify-content: center;
+}
+
+.underline {
+    font-family: 'East Sea Dokdo', cursive;    
+    text-decoration: underline;
+    font-size: 32px;
+    color: #5C4545;
+    border: none;
+    background-color: rgba(0,0,0,0);
+    cursor: pointer;
+}
+.infos {
+    font-size: 20px;
+    font-family: sans-serif;
+}
+#modalJoin {
+    position: absolute;
+    width: 359px;
+    height: 437px;
+    left: calc(50% - 359px/2 + 0.5px);
+    top: 202px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+}
+input::placeholder{
+    font-size: 16px;
+    color: #D2D2D2;
+}
+input {
+    background: rgba(191, 177, 177, 1);
+    height: 51px;
+    width: 314px;
+    left: 42px;
+    top: 298px;
+    border-radius: 11px;
+    border: none;
+}
+#modalLogin{
+    position: absolute;
+    width: 359px;
+    height: 318px;
+    left: calc(50% - 359px/2 - 0.5px);
+    top: 202px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+}
