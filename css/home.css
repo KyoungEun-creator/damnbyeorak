@@ -24,9 +24,15 @@ body {
     position: absolute;
     width: 230px;
     height: 71.17px;
-    /* left: calc(50% - 375px/2 - 1.5px);
-    top: 678px; */
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    /* top: 678px; */
+}
+#btnLogin {
+    position: absolute;
+    width: 230px;
+    height: 71.17px;
+    top: 678px;
+    left: center;
+
 }
 #goLogin {
     position: absolute;
@@ -69,9 +75,7 @@ body {
 .infos {
     font-size: 20px;
     font-family: sans-serif;
-}
-input {
-    text-indent: 2em;
+    text-align: right;
 }
 #modalJoin {
     position: absolute;
@@ -83,10 +87,6 @@ input {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 25px;
 }
-input::placeholder{
-    font-size: 16px;
-    color: #D2D2D2;
-}
 input {
     background: rgba(191, 177, 177, 1);
     height: 51px;
@@ -95,7 +95,15 @@ input {
     top: 298px;
     border-radius: 11px;
     border: none;
+    text-indent: 2em;       /*placeholder 좌측 공백*/
+    width: 200px;
+    height: 45px;
 }
+input::placeholder{
+    font-size: 16px;
+    color: #D2D2D2;
+}
+
 #btnJoin {
     position: absolute;
     width: 230px;
