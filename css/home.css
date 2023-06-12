@@ -32,7 +32,6 @@ body {
     height: 71.17px;
     top: 678px;
     left: center;
-
 }
 #goLogin {
     position: absolute;
@@ -40,8 +39,7 @@ body {
 .hidden {
     display: none;
 }
-
-.btn  {
+.btn {
     font-family: 'East Sea Dokdo', cursive;    
     font-size: 40px;
     background: #5C4545;
@@ -51,13 +49,18 @@ body {
     cursor: pointer;
     box-shadow: 0 10px 20px rgba(0,4,4,0), 0 6px 6px rgba(0,0,0,0.23);
     justify-content: center;
-    position: absolute;
+    /* position: absolute;
     width: 313x;
     height: 71.17px;
-    left: calc(53% - 313px/2 - 0.5px);
-    top: 700px;
+    top: 700px; */
+
+    position: absolute;
+    width: 230px;
+    height: 64.96px;
+    left: calc(53% - 333px/2 - 0.5px);
+    top: 694px;
 }
-.underline {
+.underline_brown {
     font-family: 'East Sea Dokdo', cursive;    
     text-decoration: underline;
     text-underline-position: under;
@@ -128,4 +131,15 @@ input::placeholder{
     background: rgba(255, 255, 255, 0.9);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 25px;
+}
+
+@media screen and (min-width: 320px){      /* smartphone */
+    body {
+        background-image: url('imgs/background_white.jpg');
+    }
+}
+@media screen and (min-width: 768px){      /* tablet */
+    body {
+        background-image: url('imgs/background_white.jpg');
+    }
 }

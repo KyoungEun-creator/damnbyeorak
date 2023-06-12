@@ -8,10 +8,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="icon" href="imgs/favicon.png">
     <title>Damnbyeorak</title>
     <style> 
         body {
-            background-image: url('imgs/background.jpg');
+            background-image: url('imgs/background_white.jpg');
             background-repeat: no-repeat;
             background-position: center top;
             background-size: 422px 888px;
@@ -19,10 +20,12 @@
     </style>
 </head>
 <body>
+    <!-- 최초화면 -->
     <span id="homeTitle">누가 내 담벼락에 낙서햇어</span>
     <button id="btnStart" class="btn">시작하기</button>
-    <button id="goLogin" class="underline">나의 담벼락으로!</button>
+    <button id="goLogin" class="underline_brown">나의 담벼락으로!</button>
 
+    <!-- 회원가입 -->
     <div id="join" class="hidden">
         <span id="modalJoin">
             <div style="font-size:40px; padding: 20px 0 20px 0;">회원가입</div>
@@ -45,6 +48,7 @@
         <button id="btnJoin" class="btn" type="submit" onclick="location.href='main.html'">담벼락 만들기</button>
     </div>
 
+    <!-- 로그인 -->
     <div id="login" class="hidden">
         <span id="modalLogin">
             <div style="font-size:40px; padding: 20px 0 20px 0;">로그인</div>
@@ -57,7 +61,7 @@
                 <input required maxlength="15" type="password" pattern=".{8,15}" placeholder="8자 이상" title="8자 이상 15자 이하로 설정하세요">
             </div>
             <button id="btnLogin" class="btn" onclick="location.href='main.html'">내 담벼락으로 이동</button>
-            <button id="goJoin" class="underline">계정이 없다면? 회원가입하기</button>
+            <button id="goJoin" class="underline_brown">계정이 없다면? 회원가입하기</button>
         </span>
     </div>
 
