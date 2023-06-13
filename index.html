@@ -31,7 +31,8 @@
             <div style="font-size:40px; padding: 20px 0 20px 0;">회원가입</div>
             <div class="infos">            
                 <span class="info" id="id">아이디</span>
-                <input required maxlength="15" type="text" placeholder="영문, 소문자, 숫자 포함"> 
+                <input required maxlength="15" type="text" placeholder="영문, 소문자, 숫자 포함">
+                <span id="warning" class="hidden">중복된 아이디입니다</span> 
             </div>
             <div class="infos">   
                 <span class="info" id="pw">비밀번호</span>
@@ -40,10 +41,12 @@
             <div class="infos">
                 <span class="info" id="pwCheck">비밀번호 확인</span>
                 <input required minlength="8" type="password" placeholder="8자 이상">
+                <span id="warning" class="hidden">비밀번호가 일치하지 않습니다</span>
             </div>
             <div class="infos">
                 <span class="info" id="username">닉네임</span>
                 <input required maxlength="8" type="text" placeholder="8자 이하">
+                <span id="warning" class="hidden">이미 존재하는 닉네임입니다</span>
             </div>
         <button id="btnJoin" class="btn" type="submit" onclick="location.href='main.html'">담벼락 만들기</button>
     </div>

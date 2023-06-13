@@ -36,11 +36,17 @@
     color: #5C4545;
     border-radius: 21px;
     position: absolute;
-    width: 252px;
-    height: 53.98px;
-    left: calc(50% - 252px/2);
-    top: 710px;
+    width: 270px;
+    height: 60px;
+    left: calc(50% - 270px/2);
+    top: 700px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    height: 53.978721618652344px;
+/* width: 252px;
+left: 69px;
+top: 665px;
+border-radius: 21px; */
+
 }
 .underline_white {
     font-family: 'East Sea Dokdo', cursive;    

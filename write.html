@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
+    <link rel="icon" href="imgs/favicon.png">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main2.css">
+    <link rel="stylesheet" href="css/write.css">
+    <title>편지쓰기</title>
+    <style> 
+        body {
+            background-image: url('imgs/background.jpg');
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-size: 422px 888px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 남의 담벼락 -->
+    <div id="mainTitle">XX님의 담벼락</div>
+    <div id="mainSubTitle">현재 n개의 엽서를 받았어요!</div>
+
+    <!-- 엽서
+    <div id="letterFlower" class="letters">
+        <img src="imgs/letters/letter_1.png">
+    </div>
+    <div id="letterBoard" class="letters" class="hidden">
+        <img src="imgs/letters/letter_2.png">
+    </div>    
+    <div id="letterHeart" class="letters" class="hidden">
+        <img src="imgs/letters/letter_3.png">
+    </div> -->
+    
+    <input type="text" class="letters" id="letterFlower">
+    <input type="text" class="letters" id="letterBoard" class="hidden">
+    <input type="text" class="letters" id="letterHeart" class="hidden">
+    <div class="marks" id="markFlower">
+        <img src="imgs/marks/flower_on.png">
+        <img class="hidden" src="imgs/marks/flower_off.png">
+    </div>
+   <div class="marks" id="markBoard">
+        <img class="hidden" src="imgs/marks/board_on.png">
+        <img src="imgs/marks/board_off.png">
+    </div>  
+    <div class="marks" id="markHeart">
+        <img class="hidden" src="imgs/marks/heart_on.png">
+        <img src="imgs/marks/heart_off.png">
+    </div>  
+
+        
+
+
+
+
+
+
+    
+    <button id="btnDecorate" class="btn_white">엽서 붙이기</button>
+    <button id="goLogin" class="underline_white">나의 담벼락으로</button>
+
+
+
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>

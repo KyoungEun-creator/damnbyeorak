@@ -39,6 +39,10 @@ body {
 .hidden {
     display: none;
 }
+#warning {
+    color: red;
+    font-family: sans-serif;
+}
 .btn {
     font-family: 'East Sea Dokdo', cursive;    
     font-size: 40px;
@@ -77,8 +81,8 @@ body {
 }
 .infos {
     padding: 10px 0 10px 0; 
-    width: 300px;
-    text-align: end;
+    width: 200px;
+    text-align: start;
 }
 .info {
     font-size: 15px;

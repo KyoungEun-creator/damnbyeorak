@@ -1,0 +1,37 @@
+.letters {
+    position: absolute;
+    width: 312px;
+    height: 434px;
+    left: calc(50% - 320px/2);
+    top: 205px;
+    z-index: 1;
+}
+#letterFlower {
+    background-image: url("imgs/letters/letter_1.png");
+    outline: none;
+}
+#letterBoard {
+    background-image: url("imgs/letters/letter_1.png");
+    outline: none;
+}
+#letterHeart {
+    background-image: url("imgs/letters/letter_1.png");
+    outline: none;
+}
+
+.marks {
+    position: absolute;
+    width: 69px;
+    height: 67px;
+    right: calc(50% - 410px/2);
+    z-index: 0;
+}
+#markFlower {
+    top: 251px;
+}
+#markBoard {
+    top: 326px;
+}
+#markHeart {
+    top: 401px;
+}
