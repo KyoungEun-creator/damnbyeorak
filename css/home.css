@@ -1,5 +1,3 @@
-
-
 body {
     font-family: 'East Sea Dokdo', cursive;
     justify-content: center;
@@ -43,6 +41,11 @@ body {
     color: red;
     font-family: sans-serif;
 }
+.exit {
+    background-color:transparent;
+    border: none;
+}
+
 .btn {
     font-family: 'East Sea Dokdo', cursive;    
     font-size: 40px;
@@ -142,8 +145,8 @@ input::placeholder{
         background-image: url('imgs/background_white.jpg');
     }
 }
-@media screen and (min-width: 768px){      /* tablet */
+@media screen and (min-width: 768px){      /* laptop */
     body {
-        background-image: url('imgs/background_white.jpg');
+        background-image: url('imgs/background2.jpeg');
     }
 }

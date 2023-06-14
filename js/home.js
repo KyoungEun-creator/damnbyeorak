@@ -15,7 +15,7 @@ function openJoin(event){
     localStorage.setItem(USERNAME_KEY, typedUsername);
     paintMainTitle(typedUsername);
 }
-startBtn.addEventListener('click', openJoin);
+startBtn.addEventListener('click', openLogin);
 
 const mainTitle = document.querySelector('#mainTitle');
 
@@ -32,7 +32,7 @@ function openLogin(){
     startBtn.classList.add(HIDDEN_CLASSNAME);
     goLogin.classList.add(HIDDEN_CLASSNAME);
 }
-goLogin.addEventListener('click', openLogin);
+goLogin.addEventListener('click', openJoin);
 
 // #goJoin click -> #join 회원가입 openJoin (로그인 모달 없어짐)
 const goJoin = document.querySelector('#goJoin');
@@ -52,3 +52,5 @@ joinBtn.addEventListener('click', openMain);
 // #btnLogin click -> 최초담벼락 열림
 const loginBtn = document.querySelector('#btnLogin');
 loginBtn.addEventListener('click', openMain);
+
+

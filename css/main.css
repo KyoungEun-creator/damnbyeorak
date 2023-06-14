@@ -43,7 +43,7 @@
     left: calc(50% - 313px/2 - 0.5px);
     top: 770px;
 }
-#exit {
+#logout {
     position: absolute;
     width: 33px;
     height: 33px;

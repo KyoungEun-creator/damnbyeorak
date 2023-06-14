@@ -22,8 +22,8 @@
 <body>
     <!-- 최초화면 -->
     <span id="homeTitle">누가 내 담벼락에 낙서햇어</span>
-    <button id="btnStart" class="btn">시작하기</button>
-    <button id="goLogin" class="underline_brown">나의 담벼락으로!</button>
+    <button id="btnStart" class="btn">시작하기</button>  <!-- 로그인 -->
+    <button id="goLogin" class="underline_brown">나의 담벼락 새로 만들기</button>  <!-- 회원가입 -->
 
     <!-- 회원가입 -->
     <div id="join" class="hidden">
@@ -32,7 +32,7 @@
             <div class="infos">            
                 <span class="info" id="id">아이디</span>
                 <input required maxlength="15" type="text" placeholder="영문, 소문자, 숫자 포함">
-                <span id="warning" class="hidden">중복된 아이디입니다</span> 
+                <span id="warning" class="hidden">이미 존재하는 아이디입니다</span> 
             </div>
             <div class="infos">   
                 <span class="info" id="pw">비밀번호</span>
@@ -48,6 +48,7 @@
                 <input required maxlength="8" type="text" placeholder="8자 이하">
                 <span id="warning" class="hidden">이미 존재하는 닉네임입니다</span>
             </div>
+        <button id="modalExit" class="exit"><img src="imgs/icon_exitWhite.png" alt="회원가입 나가기"></button>
         <button id="btnJoin" class="btn" type="submit" onclick="location.href='main.html'">담벼락 만들기</button>
     </div>
 
@@ -63,6 +64,8 @@
                 <div class="info">비밀번호</div>
                 <input required maxlength="15" type="password" pattern=".{8,15}" placeholder="8자 이상" title="8자 이상 15자 이하로 설정하세요">
             </div>
+            <button id="modalExit" class="exit"><img src="imgs/icon_exitWhite.png" alt="로그인 나가기"></button>
+
             <button id="btnLogin" class="btn" onclick="location.href='main.html'">내 담벼락으로 이동</button>
             <button id="goJoin" class="underline_brown">계정이 없다면? 회원가입하기</button>
         </span>
