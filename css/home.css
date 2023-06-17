@@ -92,7 +92,7 @@ body {
     font-family: sans-serif;
 
 }
-#modalJoin {
+#modalSignin {
     position: absolute;
     width: 359px;
     height: 437px;
@@ -121,7 +121,7 @@ input::placeholder{
     color: #D2D2D2;
 }
 
-#btnJoin {
+#btnSignin {
     position: absolute;
     width: 230px;
     height: 64.96px;
