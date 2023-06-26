@@ -15,8 +15,8 @@
             background-image: url('imgs/background_white.jpg');
             background-repeat: no-repeat;
             background-position: center top;
-            background-size: 422px 888px;
-        }
+            max-width: 100%;
+            height: auto;        }
     </style>
 </head>
 <body>
@@ -28,26 +28,32 @@
             <div style="font-size:40px; padding: 20px 0 20px 0;">회원가입</div>
             <div class="infos">            
                 <span class="info" id="id">아이디</span>
-                <input required maxlength="15" type="text" placeholder="영문, 소문자, 숫자 포함">
+                <input dir="ltr" required maxlength="15" type="text" placeholder="영문, 소문자, 숫자 포함">
                 <span id="warning" class="hidden">이미 존재하는 아이디입니다</span> 
             </div>
             <div class="infos">   
                 <span class="info" id="pw">비밀번호</span>
-                <input required maxlength="15" type="password" pattern=".{8,15}" placeholder="8자 이상" title="8자 이상 15자 이하로 설정하세요">
+                <input dir="ltr" required maxlength="15" type="password" pattern=".{8,15}" placeholder="8자 이상" title="8자 이상 15자 이하로 설정하세요">
             </div>
             <div class="infos">
                 <span class="info" id="pwCheck">비밀번호 확인</span>
-                <input required minlength="8" type="password" placeholder="8자 이상">
+                <input dir="ltr" required minlength="8" type="password" placeholder="8자 이상">
                 <span id="warning" class="hidden">비밀번호가 일치하지 않습니다</span>
             </div>
             <div class="infos">
                 <span class="info" id="username">닉네임</span>
-                <input required maxlength="8" type="text" placeholder="8자 이하">
+                <input dir="ltr" required maxlength="8" type="text" placeholder="8자 이하">
                 <span id="warning" class="hidden">이미 존재하는 닉네임입니다</span>
             </div>
-        <button id="modalExit" class="exit"><img src="imgs/icon_exitWhite.png" alt="회원가입 나가기"></button>
-        <button id="btnSignin" class="btn" type="submit" onclick="location.href='main.html'">담벼락 만들기</button>
+            
+            <button id="btnExit" class="exit"><img src="imgs/icon_exitWhite.png" alt="회원가입 나가기"></button>
+
+        </span>
+
+        <button id="btn" class="btnSignin" onclick="location.href='main.html'">담벼락 만들기</button>
+
     </div>
+    
 
 
     <script src="js/home.js"></script>

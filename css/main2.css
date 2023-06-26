@@ -28,7 +28,7 @@
     text-align: center;
     color: #FFFFFF;
     }
-#btnDecorate {
+.btn_white {
     font-family: 'East Sea Dokdo', cursive;    
     font-size: 40px;
     background: #FFFDF6;

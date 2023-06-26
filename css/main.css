@@ -43,7 +43,7 @@
     left: calc(50% - 313px/2 - 0.5px);
     top: 770px;
 }
-#logout {
+#btnLogout {
     position: absolute;
     width: 33px;
     height: 33px;

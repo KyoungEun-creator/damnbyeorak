@@ -18,20 +18,36 @@ body {
     text-align: center;
     color: #000000;
 }
-#btnStart {
-    position: absolute;
+#btn {
+    font-family: 'East Sea Dokdo', cursive;    
+    font-size: 40px;
+    background: #5C4545;
+    border: none;
+    color: white;
+    border-radius: 21px;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0,4,4,0), 0 6px 6px rgba(0,0,0,0.23);
+    /* justify-content: center; */
+    position: relative;
     width: 230px;
     height: 71.17px;
+    top: 680px;
+}
+.btnStart {
+    position: absolute;
+    /* width: 230px;
+    height: 71.17px; */
+}
+.btnLogin {
+    position: absolute;
+    /* width: 230px;
+    height: 71.17px; */
     /* top: 678px; */
 }
-#btnLogin {
+.goLogin {
     position: absolute;
-    width: 230px;
-    height: 71.17px;
-    top: 678px;
-    left: center;
 }
-#goLogin {
+.goSignin {
     position: absolute;
 }
 .hidden {
@@ -42,32 +58,17 @@ body {
     font-family: sans-serif;
 }
 .exit {
-    background-color:transparent;
+    background-color: transparent;
     border: none;
 }
-
-.btn {
-    font-family: 'East Sea Dokdo', cursive;    
-    font-size: 40px;
-    background: #5C4545;
-    border: none;
-    color: white;
-    border-radius: 21px;
-    cursor: pointer;
-    box-shadow: 0 10px 20px rgba(0,4,4,0), 0 6px 6px rgba(0,0,0,0.23);
-    justify-content: center;
-    /* position: absolute;
-    width: 313x;
-    height: 71.17px;
-    top: 700px; */
-
+#btnExit {
+    margin: 0;
+    padding: 0;
     position: absolute;
-    width: 230px;
-    height: 64.96px;
-    left: calc(53% - 333px/2 - 0.5px);
-    top: 694px;
+    top: -20px;
+    right: -10px;
 }
-.underline_brown {
+#underline_brown {
     font-family: 'East Sea Dokdo', cursive;    
     text-decoration: underline;
     text-underline-position: under;
@@ -76,22 +77,25 @@ body {
     border: none;
     background-color: rgba(0,0,0,0);
     cursor: pointer;
-    position: absolute;
+    position: relative;
     width: 313px;
     height: 74px;
-    left: calc(50% - 313px/2 - 0.5px);
-    top: 770px;
+    top: 750px;
 }
 .infos {
-    padding: 10px 0 10px 0; 
-    width: 200px;
+    padding: 10px 0 10px 20px; 
+    width: 359px;
+    display: block;
     text-align: start;
 }
 .info {
     font-size: 15px;
     font-family: sans-serif;
-
 }
+.infos input {
+    padding-right: 10px;
+}
+
 #modalSignin {
     position: absolute;
     width: 359px;
@@ -121,12 +125,10 @@ input::placeholder{
     color: #D2D2D2;
 }
 
-#btnSignin {
+.btnSignin {
     position: absolute;
-    width: 230px;
-    height: 64.96px;
-    left: 70px;
-    top: 580px;
+    /* width: 230px;
+    height: 64.96px; */
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 #modalLogin{
@@ -143,10 +145,5 @@ input::placeholder{
 @media screen and (min-width: 320px){      /* smartphone */
     body {
         background-image: url('imgs/background_white.jpg');
-    }
-}
-@media screen and (min-width: 768px){      /* laptop */
-    body {
-        background-image: url('imgs/background2.jpeg');
     }
 }

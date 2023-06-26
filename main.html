@@ -16,18 +16,20 @@
             background-image: url('imgs/background.jpg');
             background-repeat: no-repeat;
             background-position: center top;
-            background-size: 422px 888px;
+            max-width: 100%;
+            height: auto;        
         }
     </style>
 </head>
 <body>
-    <!-- 최초 담벼락 -->
+    <!-- 남의 담벼락 -->
     <div id="mainTitle">XX님의 담벼락</div>
     <div id="mainSubTitle">현재 n개의 엽서를 받았어요!</div>
     <button id="copyURL" class="underline_white">나의 담벼락 공유하기</button>
 
 
-    <img id="logout" src="imgs/icon_logout.png">
+    <button type="button"><img id="btnLogout" src="imgs/icon_logout.png" alt="로그아웃"></button>  <!-- 로그아웃 하시겠습니까 모달창 팝업 -->
+
 
 
 
