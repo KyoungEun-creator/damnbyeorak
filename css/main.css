@@ -49,4 +49,10 @@
     height: 33px;
     top: 30px;
     right: calc(50% - 313px/2 - 15px);
+    background-color: transparent;
+    border: 0;
+}
+#btnLogout img {
+    width: 33px;
+    height: 33px;
 }
