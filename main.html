@@ -23,7 +23,7 @@
 </head>
 <body>
     <div>
-        <img src="imgs/background.jpg" style="max-width: 388px"> <!-- 임시방편 -->
+        <img id="bg" src="imgs/background.jpg" style="max-width: 388px"> <!-- 임시방편 -->
         <div>
             <!-- 로그인/회원가입 후 나의 담벼락 -->
             <div id="mainTitle">XX님의 담벼락</div>
@@ -32,11 +32,12 @@
     
     
             <!-- <button><img id="btnLogout" src="imgs/icon_logout.png" alt="로그아웃"></button>  로그아웃 하시겠습니까 모달창 팝업 -->
-            <button id="btnLogout" class="logout" onclick="location.href='/'"><img src="imgs/icon_logout.png" alt="로그아웃"></button> <!-- 엑스버튼 누르면 최초화면으로 돌아가 -->
-    
+            <button id="btnLogout" class="logout"><img src="imgs/icon_logout.png" alt="로그아웃"></button> <!-- 엑스버튼 누르면 최초화면으로 돌아가 -->
+            <img id="modalLogout" class="hidden" src="imgs/logout_modal.png">
+
         </div>
     </div>
 
-    <script src="js/main.js"></script>
+    <script src="js/logout.js"></script>
 </body>
 </html>
