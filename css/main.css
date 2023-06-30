@@ -58,3 +58,10 @@
     width: 33px;
     height: 33px;
 }
+#modalLogout {
+    z-index: 1;
+    position: absolute;
+    margin: auto;
+    top: 250px;
+    left: calc(50% - 375px/2 + 7.5px);
+}

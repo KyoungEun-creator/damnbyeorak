@@ -11,12 +11,15 @@ function openLogout(){
 }
 logoutBtn.addEventListener('click', openLogout);
 
-// 로그아웃 모달이 아닌 배경화면 click -> 다시 main.html로 복귀
+// 로그아웃 모달이 아닌 배경화면 click -> 로그아웃 모달만 사라짐
 const background = document.querySelector('#bg');
 
-if (logoutModal.classList.contains('hidden')===false) {
-    // 보일 때: 배경 클릭하면 -> 다시 안 보이도록(class 추가)
-    background.addEventListener('click', function(){
-        logoutModal.classList.add('hidden');
-    })
-} 
+// if (logoutModal.classList.contains('hidden')===false) {
+//     // 보일 때: 배경 클릭하면 -> 다시 안 보이도록(class 추가)
+//     background.addEventListener('click', function(){
+//         logoutModal.classList.toggle('hidden');
+//     })
+// } 
+background.addEventListener('click', function(){
+    logoutModal.classList.toggle('hidden');
+});
