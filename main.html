@@ -9,42 +9,26 @@
     <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
     <link rel="icon" href="imgs/favicon.png">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/home.css">
+    <!-- <link rel="stylesheet" href="css/home.css"> -->
     <title>최초담벼락</title>
-    <!-- <style> 
-        body {
-            background-image: url('imgs/background.jpg');
-            background-repeat: no-repeat;
-            background-position: center top;
-            width: 30px;
-            height: auto;
-        }
-    </style> -->
 </head>
-<body>
-    <div>
-        <img id="bg" src="imgs/background.jpg" style="max-width: 388px"> 
-        
-        <div>
-            <!-- 로그인/회원가입 후 나의 담벼락 -->
-            <div id="mainTitle">XX님의 담벼락</div>
-            <div id="mainSubTitle">현재 n개의 엽서를 받았어요!</div>
-            <button id="underline_white" class="copyURL">나의 담벼락 공유하기</button>
+<body>        
+        <!-- 로그인/회원가입 후 나의 담벼락 -->
+        <div id="mainTitle">XX님의 담벼락</div>
+        <div id="mainSubTitle">현재 n개의 엽서를 받았어요!</div>
+        <button id="underline_white" class="copyURL">나의 담벼락 공유하기</button>
     
-            <button id="btnLogout" class="logout"><img src="imgs/icon_logout.png" alt="로그아웃"></button> 
+        <button id="btnLogout" class="logout"><img src="imgs/icon_logout.png" alt="로그아웃"></button> 
 
-            <div id="modalLogout" class="hidden modal">
-                <div class="modalContent">
-                    <p style="font-size: 40px;">로그아웃 하시겠습니까?</p>
-                    <div class="modalBtns">
-                        <button id="cancelLogout">아니오</button>
-                        <button id="confirmLogout">네</button>
-                    </div>
+        <div id="modalLogout" class="hidden modal">
+            <div class="modalContent">
+                <p style="font-size: 40px;">로그아웃 하시겠습니까?</p>
+                <div class="modalBtns">
+                    <button id="cancelLogout">아니오</button>
+                    <button id="confirmLogout">네</button>
                 </div>
             </div>
-
         </div>
-    </div>
 
     <script src="js/logout.js"></script>
 </body>
