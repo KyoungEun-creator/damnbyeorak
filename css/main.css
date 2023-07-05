@@ -1,3 +1,8 @@
+@import "reset.css";
+
+.hidden {
+    display: none;
+}
 #mainTitle {
     position: absolute;
     width: 375px;
@@ -45,23 +50,53 @@
     z-index: 1;
     /* 임시방편 */
 }
+button {
+    background-color: transparent;
+    border: 0;
+    font-family: 'East Sea Dokdo', cursive;    
+}
 #btnLogout {
     position: absolute;
     width: 33px;
     height: 33px;
     top: 30px;
     right: calc(50% - 313px/2 - 15px);
-    background-color: transparent;
-    border: 0;
 }
 #btnLogout img {
     width: 33px;
     height: 33px;
 }
-#modalLogout {
+.modal {
+    position: fixed;
     z-index: 1;
-    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     margin: auto;
-    top: 250px;
-    left: calc(50% - 375px/2 + 7.5px);
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.modalContent {
+    width: 351px;
+    height: 145px;
+    border-radius: 19px;
+    background-color: #FFFDF6;
+    margin: 15% auto;
+}
+.modalContent p {
+    padding: 27px 0 27px 0;
+    border-bottom: 1.3px solid black;
+}
+.modalBtns {
+    text-align: center;
+}
+.modalBtns button {
+    font-size: 32px;
+    padding: 4px 50px 4px 50px;
+}
+#cancelLogout {
+    border-right: 1.3px solid black;
 }

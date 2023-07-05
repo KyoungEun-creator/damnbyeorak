@@ -4,22 +4,58 @@
 
 const logoutBtn = document.querySelector('#btnLogout');
 const logoutModal = document.querySelector('#modalLogout');
-const HIDDEN_CLASSNAME = 'hidden';
+const confirmLogoutBtn = document.querySelector('#confirmLogout')
+const cancelLogoutBtn = document.querySelector('#cancelLogout')
+const modalBackground = document.querySelector('.modal');
 
+
+// 로그아웃 버튼 클릭 시 모달창 열림
 function openLogout(){
-    logoutModal.classList.remove(HIDDEN_CLASSNAME);
+    logoutModal.style.display = 'block';
 }
 logoutBtn.addEventListener('click', openLogout);
 
-// 로그아웃 모달이 아닌 배경화면 click -> 로그아웃 모달만 사라짐
-const background = document.querySelector('#bg');
 
-// if (logoutModal.classList.contains('hidden')===false) {
-//     // 보일 때: 배경 클릭하면 -> 다시 안 보이도록(class 추가)
-//     background.addEventListener('click', function(){
-//         logoutModal.classList.toggle('hidden');
-//     })
-// } 
-background.addEventListener('click', function(){
-    logoutModal.classList.toggle('hidden');
+// '네' 버튼 클릭 시 로그아웃 처리
+function performLogout(){       // 로그아웃 처리를 수행하는 함수 호출
+    // 로그아웃 API를 호출하거나 로컬 스토리지에서 로그인 정보를 삭제
+    fetch('/api/logout', {
+        method: 'POST',
+        // 헤더 정보 설정 등 API 호출 코드는 이전에 제공한 코드 사용
+    })
+    .then(response => {
+        if (response.ok) {
+        // 로그아웃이 성공한 경우, 로그인 정보를 삭제하고 홈페이지로 리다이렉트
+            clearLoginInfo();
+            // 리다이렉트할 URL을 index.html로 변경
+            window.location.href = 'index.html';
+        } else {
+            // 로그아웃이 실패한 경우에 대한 처리 수행
+        console.error('로그아웃 실패');
+        }
+    })
+    .catch(error => {
+        // 네트워크 오류 등 로그아웃 요청 실패 시에 대한 처리 수행
+        console.error('로그아웃 요청 실패:', error);
+    });
+}
+function clearLoginInfo() {
+    // 로그인 정보를 저장한 키를 사용하여 로컬 스토리지에서 해당 정보를 삭제
+    localStorage.removeItem('accessToken');
+    localStorage.removeItem('userInfo');
+}
+
+confirmLogoutBtn.addEventListener('click', performLogout);
+  
+// '아니오' 버튼 클릭 시 모달창 닫힘
+function closeLogout(){
+    logoutModal.style.display = "none";
+}
+cancelLogoutBtn.addEventListener('click', closeLogout);
+  
+// 모달 배경 클릭 시 모달창 닫힘
+modalBackground.addEventListener('click', function(event) {
+  if (event.target === modalBackground) {
+    closeLogout();
+  }
 });
