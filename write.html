@@ -16,27 +16,40 @@
     <div id="mainTitle">XX님의 담벼락</div>
     <div id="mainSubTitle">현재 n개의 엽서를 받았어요!</div>
 
-    <input type="text" class="letters" id="letterFlower">
-    <input type="text" class="letters" id="letterBoard" class="hidden">
-    <input type="text" class="letters" id="letterHeart" class="hidden">
-    <div class="marks" id="markFlower">
-        <img src="imgs/marks/flower_on.png">
-        <img class="hidden" src="imgs/marks/flower_off.png">
+    <!-- 편지지1 (flower) -->
+    <div id="letters-wrapper">
+        <img id="letters" class="letter1" src="imgs/letters/letter_1.png">
+        <div class="marks" id="markFlower">
+            <img id="mark1_on" class="mark-on" src="imgs/marks/mark1_on.png">
+            <img id="mark1_off" class="mark-off hidden" src="imgs/marks/mark1_off.png">
+        </div>
     </div>
-   <div class="marks" id="markBoard">
-        <img class="hidden" src="imgs/marks/board_on.png">
-        <img src="imgs/marks/board_off.png">
-    </div>  
-    <div class="marks" id="markHeart">
-        <img class="hidden" src="imgs/marks/heart_on.png">
-        <img src="imgs/marks/heart_off.png">
-    </div>  
-
+    <!-- 편지지2 (board) -->
+    <div id="letters-wrapper">
+        <img id="letters" class="letter2 hidden" src="imgs/letters/letter_2.png">
+        <div class="marks" id="markBoard">
+            <img id="mark2_on" class="mark-on hidden" src="imgs/marks/mark2_on.png">
+            <img id="mark2_off" class="mark-off" src="imgs/marks/mark2_off.png">
+        </div>
+    </div> 
     
+    <!-- 편지지3 (heart) -->
+    <div id="letters-wrapper">
+        <img id="letters" class="letter3 hidden" src="imgs/letters/letter_3.png">
+        <div class="marks" id="markHeart">
+            <img id="mark3_on" class="mark-on hidden" src="imgs/marks/mark3_on.png">
+            <img id="mark3_off" class="mark-off" src="imgs/marks/mark3_off.png">
+        </div>          
+    </div> 
+
+
+
+    <!-- '엽서 붙이기' 버튼 누르면: (main2.html에 엽서 부착된 모습 보여짐) -->
     <button id="btn_white" class="btnAttach">엽서 붙이기</button>
-    <button id="underline_white" class="goLogin">나의 담벼락으로</button>
+    <!-- '나의 담벼락으로' 버튼 누르면: (login.html으로 이동) -->
+    <button id="underline_white" class="goLogin" onclick="location.href='login.html'">나의 담벼락으로</button>
 
 
-    <script src="js/main.js"></script>
+    <script src="/js/write.js"></script>
 </body>
 </html>

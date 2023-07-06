@@ -78,8 +78,26 @@ body {
     left: 50%;
     transform: translateX(-50%);
 }
-
-.letters {
+/* .letters {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 312px;
+    height: 434px;
+} */
+/* .input-wrapper {
+    background-image: url('/imgs/letters/letter_1.png');
+    width: 312px;
+    height: 434px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 210px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    z-index: 0;  
+} */
+/*   
+.input-wrapper input {
     position: fixed;
     width: 312px;
     height: 434px;
@@ -87,20 +105,21 @@ body {
     transform: translateX(-50%);
     top: 210px;
     z-index: 1;
+    background-color: transparent; /* 입력창의 배경을 투명하게 설정하여 배경 이미지가 보이도록 함
+    border: 5px solid tomato;
+} */
+.hidden {
+    display: none;
 }
-#letterFlower {
-    background-image: url("imgs/letters/letter_1.png");
-    outline: none;
+#letters {
+    position: fixed;
+    padding-top: 210px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 312px;
+    height: 434px;
+    z-index: 1;
 }
-#letterBoard {
-    background-image: url("imgs/letters/letter_2.png");
-    outline: none;
-}
-#letterHeart {
-    background-image: url("imgs/letters/letter_3.png");
-    outline: none;
-}
-
 .marks {
     position: fixed;
     width: 69px;
