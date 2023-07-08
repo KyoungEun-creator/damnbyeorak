@@ -100,9 +100,10 @@ body {
     right: -10px;
 }
 
-#modalLogin{
+#modalLogin {
     position: fixed;
-    width: 359px;
+    width: 290px;
+    /* 359 */
     height: 318px;
     top: 210px;
     left: 50%;

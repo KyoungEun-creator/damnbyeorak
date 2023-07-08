@@ -15,40 +15,43 @@
     <!-- 회원가입 -->
     <span id="homeTitle">누가<br> 내 담벼락에 낙서햇어</span>
 
-    <div id="signin">
+    <div id="signin-form">
         <span id="modalSignin">
             <div id="modalTitle">회원가입</div>
 
             <div class="infos">
                 <div style="padding: 10px 0 20px 20px;">
-                    <span class="infoTitle" id="id">아이디</span>
-                    <input dir="ltr" required maxlength="15" type="text" placeholder="영문, 소문자, 숫자 포함">
-                    <span id="warning" class="hidden">이미 존재하는 아이디입니다</span> 
+                    <span class="infoTitle" id="id">아이디
+                        <input dir="ltr" required maxlength="15" type="text" placeholder="영문, 소문자, 숫자 포함">
+                        <span id="warning" class="hidden">이미 존재하는 아이디입니다</span>
+                    </span>
                 </div>
                 <div style="padding: 10px 0 20px 20px;">
-                    <span class="infoTitle" id="pw">비밀번호</span>
-                    <input dir="ltr" required maxlength="15" type="password" pattern=".{8,15}" placeholder="8자 이상" title="8자 이상 15자 이하로 설정하세요">
+                    <span class="infoTitle" id="pw">비밀번호
+                        <input dir="ltr" required maxlength="15" type="password" pattern=".{8,15}" placeholder="8자 이상" title="8자 이상 15자 이하로 설정하세요">
+                    </span>
                 </div>
                 <div style="padding: 10px 0 20px 20px;">
-                    <span class="infoTitle" id="pwCheck">비밀번호 확인</span>
-                    <input dir="ltr" required minlength="8" type="password" placeholder="8자 이상">
-                    <span id="warning" class="hidden">비밀번호가 일치하지 않습니다</span>
+                    <span class="infoTitle" id="pwCheck">비밀번호 확인
+                        <input dir="ltr" required minlength="8" type="password" placeholder="8자 이상">
+                        <span id="warning" class="hidden">비밀번호가 일치하지 않습니다</span>
+                    </span>
                 </div>
                 <div style="padding: 10px 0 20px 20px;">
-                    <span class="infoTitle" id="username">닉네임</span>
-                    <input dir="ltr" required maxlength="8" type="text" placeholder="8자 이하">
-                    <span id="warning" class="hidden">이미 존재하는 닉네임입니다</span>
+                    <span class="infoTitle" id="username">닉네임
+                        <input dir="ltr" required maxlength="8" type="text" placeholder="8자 이하">
+                        <span id="warning" class="hidden">이미 존재하는 닉네임입니다</span>
+                    </span>
                 </div>
                 <button id="btnExit" class="exit" onclick="location.href='index.html'"><img src="imgs/icon_exitWhite.png" alt="회원가입 나가기"></button> <!-- 엑스버튼 누르면 최초화면으로 돌아가 -->
             </div>
         </span>
 
         <!-- performSignin 회원가입 진행 -->
-        <button id="btn" class="btnSignin" onclick="location.href='main.html'">담벼락 만들기</button> 
-
-
+        <button type="submit" id="btn" class="btnSignin" onclick="location.href='main.html'">담벼락 만들기</button> 
     </div>
     
 
+    <script src="js/mainTitle.js"></script>
 </body>
 </html>
