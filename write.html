@@ -8,8 +8,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
     <link rel="icon" href="imgs/favicon.png">
+    
     <link rel="stylesheet" href="css/write.css">
-    <title>편지쓰기</title>
+    <title>편지 쓰기</title>
 </head>
 <body>
     <!-- 편지 쓰기 -->
@@ -18,7 +19,7 @@
 
     <!-- 편지지1 (flower) -->
     <div id="letters-wrapper">
-        <img id="letters" class="letter1" src="imgs/letters/letter_1.png">
+        <textarea id="letters" class="letter1" style="background-image:url('/imgs/letters/letter_1.png')"></textarea>
         <div class="marks" id="markFlower">
             <img id="mark1_on" class="mark-on" src="imgs/marks/mark1_on.png">
             <img id="mark1_off" class="mark-off hidden" src="imgs/marks/mark1_off.png">
@@ -26,7 +27,7 @@
     </div>
     <!-- 편지지2 (board) -->
     <div id="letters-wrapper">
-        <img id="letters" class="letter2 hidden" src="imgs/letters/letter_2.png">
+        <textarea id="letters" class="letter2 hidden" style="background-image:url('/imgs/letters/letter_2.png')"></textarea>
         <div class="marks" id="markBoard">
             <img id="mark2_on" class="mark-on hidden" src="imgs/marks/mark2_on.png">
             <img id="mark2_off" class="mark-off" src="imgs/marks/mark2_off.png">
@@ -35,7 +36,7 @@
     
     <!-- 편지지3 (heart) -->
     <div id="letters-wrapper">
-        <img id="letters" class="letter3 hidden" src="imgs/letters/letter_3.png">
+        <textarea id="letters" class="letter3 hidden" style="background-image:url('/imgs/letters/letter_3.png')"></textarea>
         <div class="marks" id="markHeart">
             <img id="mark3_on" class="mark-on hidden" src="imgs/marks/mark3_on.png">
             <img id="mark3_off" class="mark-off" src="imgs/marks/mark3_off.png">
@@ -46,6 +47,7 @@
 
     <!-- '엽서 붙이기' 버튼 누르면: (main2.html에 엽서 부착된 모습 보여짐) -->
     <button id="btn_white" class="btnAttach">엽서 붙이기</button>
+    
     <!-- '나의 담벼락으로' 버튼 누르면: (login.html으로 이동) -->
     <button id="underline_white" class="goLogin" onclick="location.href='login.html'">나의 담벼락으로</button>
 

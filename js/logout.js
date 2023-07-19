@@ -48,14 +48,14 @@ function clearLoginInfo() {
 confirmLogoutBtn.addEventListener('click', performLogout);
   
 // '아니오' 버튼 클릭 시 모달창 닫힘
-function closeLogout(){
+function closeModal(){
     logoutModal.style.display = "none";
 }
-cancelLogoutBtn.addEventListener('click', closeLogout);
+cancelLogoutBtn.addEventListener('click', closeModal);
   
 // 모달 배경 클릭 시 모달창 닫힘
 modalBackground.addEventListener('click', function(event) {
   if (event.target === modalBackground) {
-    closeLogout();
+    closeModal();
   }
 });
